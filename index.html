@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PoliTalk</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+
+    <!-- ─── HEADER ─── -->
+    <header class="header">
+      <div class="header-logo">
+        <div class="logo-icon">💬</div>
+        <h1 class="logo-text">PoliTalk</h1>
+      </div>
+      <div id="active-filters" class="active-filters"></div>
+    </header>
+
+    <!-- ─── LAYOUT PRINCIPALE ─── -->
+    <div class="layout">
+
+      <!-- Feed -->
+      <main class="feed-container">
+        <div id="topic-pills" class="topic-pills"></div>
+        <div id="feed" class="feed"></div>
+      </main>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-card">
+          <h3 class="sidebar-title">Agenti nel dibattito</h3>
+          <div id="agent-list" class="agent-list"></div>
+        </div>
+        <div class="sidebar-card">
+          <h3 class="sidebar-title">Notizie in discussione</h3>
+          <div id="topic-list" class="topic-list"></div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- ─── MODAL PROFILO AGENTE ─── -->
+    <div id="profile-modal" class="modal hidden">
+      <div class="modal-backdrop"></div>
+      <div class="modal-content" id="profile-content"></div>
+    </div>
+
+  </div>
+
+  <!-- Script (type=module per usare import/export) -->
+  <script type="module" src="main.js"></script>
+</body>
+</html>
